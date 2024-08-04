@@ -1,0 +1,69 @@
+:root, * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  color: #222;
+}
+
+.img1 {
+  background: url("./assets/nature2.jpg");
+}
+
+.img2 {
+  background: url("./assets/nature3.jpg");
+}
+
+.img3 {
+  background: url("./assets/nature4.jpg");
+}
+
+.img1, .img2, .img3 {
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+.description1, .description2, .description3, .description4 {
+  height: 700px;
+}
+
+.description1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+.description1 > div {
+  background: url("./assets/nature1.jpg");
+  position: fixed;
+  z-index: -10;
+  opacity: 0.8;
+  height: 200vh;
+  margin-top: -20px;
+  width: 100%;
+}
+
+.description1 > * {
+  padding-top: 30px;
+}
+
+.description2, .description3 {
+  font-weight: 900;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 5%;
+  padding: 0 20px 40px 20px;
+}
+
+.description4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 2rem;
+  padding: 150px 0;
+}
